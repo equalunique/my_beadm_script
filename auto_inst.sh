@@ -25,7 +25,7 @@ cat >> /etc/resolv.conf <<__EOF__
 8.8.4.4
 __EOF__
 route add default 64.79.70.65
-ifconfig inet 64.79.70.66 netmask 255.255.255.248
+ifconfig igb0 inet 64.79.70.66 netmask 255.255.255.248
 echo PermitRootLogin=yes >> /etc/ssh/sshd_config
 service sshd onestart
 
